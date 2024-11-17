@@ -19,12 +19,12 @@ function Contact(props) {
   });
 
   return (
-    <div className="contact-main">
+    <div style={{ width: "110%" }}>
       <Header theme={props.theme} setTheme={props.setTheme} />
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
-          {/* <div className="contact-heading-div"> */}
-          <div>
+          <div className="contact-heading-div">
+            {/* <div> */}
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -42,7 +42,7 @@ function Contact(props) {
               <br />
               <br />
               <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
+                See My Resume
               </a>
             </div>
           </div>

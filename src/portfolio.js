@@ -14,9 +14,9 @@ const greeting = {
   logo_name: "Tanmay",
   nickname: "Tanmay",
   full_name: "Tanmay Nikam",
-  subTitle: "Full Stack Developer, Always learning.",
+  subTitle: "A Software Engineer and A Learning aficionado.",
   resumeLink:
-    "https://drive.google.com/file/d/1osxneytpBGWmMs2Pq2-sr7S_3GsDCCcT/view?usp=sharing",
+    "https://drive.google.com/file/d/1J8vXnZ-04swKdYOANP-73vOU30EFHZTD/view?usp=sharing",
   mail: "mailto:tanmaynikam2002@gmail.com",
 };
 
@@ -37,9 +37,9 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building front end using ReactJS and Redux",
-        "⚡ Creating application backend in Node, Express & Firebase",
-        "⚡ Worked with NOSQL databases, mongodb and firestore",
+        "⚡ Built front end using ReactJS and Redux",
+        "⚡ Created application backend in Node, Express & Firebase",
+        "⚡ Worked with NOSQL & SQL databases, MySQL, MongoDB and Firestore",
       ],
       softwareSkills: [
         {
@@ -80,7 +80,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "logos-nodejs",
           style: {
             color: "#339933",
           },
@@ -95,6 +95,52 @@ const skills = {
         {
           skillName: "Git",
           fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#E94E32",
+          },
+        },
+      ],
+    },
+    {
+      title: "Machine Learning",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Currently interested in learning about machine learning application in healthcare.",
+        "⚡ Stint of experience through projects and competitions.",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "logos-python",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "Sklearn",
+          fontAwesomeClassname: "simple-icons:scikitlearn",
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "Pytorch",
+          fontAwesomeClassname: "logos-pytorch-icon",
           style: {
             color: "#E94E32",
           },
@@ -145,9 +191,10 @@ const skills = {
 const education = {
   education: [
     {
-      title: "International institute of information technology (IIIT)",
+      title:
+        "International Institute of Information Technology (IIIT) - Naya Raipur",
       duration: "2019-2023",
-      score: "8.37 CGPA",
+      score: "8.45 CGPA",
       location_city: "Raipur",
       location_state: "Chhattisgarh",
       location_country: "India",
@@ -157,13 +204,25 @@ const education = {
       text: "#1d1d1d",
     },
     {
-      title: "Pace jr. science college",
+      title: "Pace Junior Science College",
       duration: "2017-2019",
       score: "83.38%",
       location_city: "Mumbai",
       location_state: "Maharashtra",
       location_country: "India",
-      description: "HSC (XII)",
+      description: "12th Grade (Junior College)",
+      sec_details: "",
+      color: "#fef54b",
+      text: "#1d1d1d",
+    },
+    {
+      title: "Saraswati Mandir High School",
+      duration: "2016-2017",
+      score: "95.6%",
+      location_city: "Mumbai",
+      location_state: "Maharashtra",
+      location_country: "India",
+      description: "10th grade (High School)",
       sec_details: "",
       color: "#fef54b",
       text: "#1d1d1d",
@@ -189,30 +248,40 @@ const experience = {
   title: "Experience",
   subtitle: " ",
   description:
-    "Currently working as Analyst-Intern at American Express, previously worked SDE Intern at a stealth startup",
+    "Currently working as Software Engineer at American Express, previously worked SDE Intern at a stealth startup",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Internships",
       experiences: [
         {
-          title: "Analyst Intern",
+          title: "Software Engineer",
           company: "American Express",
           logo_path: "American Express.png",
-          duration: "Jan 2023 - Present",
+          duration: "Aug 2023 - Present",
           location: "Onsite",
           description:
-            "Working on automation of business processes using Java and Robot Framework",
+            "Still Working on the in-house framework to deliver automation solutions and enhance the underlying tool.",
           color: "#ee3c26",
         },
         {
-          title: "SDE Intern",
+          title: "Analyst Intern",
+          company: "American Express",
+          logo_path: "American Express.png",
+          duration: "Jan 2023 - June 202",
+          location: "Onsite",
+          description:
+            "Worked on an in-house automation framework using JAVA, Spring Boot and Selenium.",
+          color: "#ee3c26",
+        },
+        {
+          title: "Software Engineer Intern",
           company: "Stleath Startup",
           logo_path: "stealth_startup.png",
           duration: "April 2022 - Nov 2022",
           location: "Remote",
           description:
-            "Worked with the founding team to build the application from scratch, used NodeJS, Firebase and Firestore on the backend and built a responsive frontend with React and Redux",
+            "Worked with the founding team to develop the full-stack application single-handedly, using NodeJS and Firebase for the backend and React and Redux to build a responsive frontend.",
           color: "#ee3c26",
         },
       ],
@@ -224,7 +293,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My best experience is to work on web development projects. Below are some of my projects.",
+    "I have a hodgepodge of projects, with Web Developement and Machine learning Projects. But currently I much more into machine learning and its real-world applications.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -302,6 +371,23 @@ const projects = {
       ],
     },
     {
+      id: "4",
+      name: "Music Genre Classification",
+      url: "https://642cfaf32ababf4822d37fa4--peppy-kitten-8e6c58.netlify.app/",
+      description:
+        "Built a Music Genre Classifier by training a CNN classifier on MEL-spectograms generated for the music files.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "Tensorflow",
+          iconifyClass: "logos-tensorflow",
+        },
+      ],
+    },
+    {
       id: "2",
       name: "Medical Chatbot",
       url: "https://github.com/TanmayNikam/Chatbot",
@@ -329,6 +415,33 @@ const projects = {
       url: "https://github.com/TanmayNikam/exercise_tracker_app",
       description:
         "Allows user to manually keep logs of their fitness activity and nutrtion intake. Integrated exercieses and nutrition API. Implemented authentication with JWT.",
+      languages: [
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Nodejs",
+          iconifyClass: "la-node",
+          color: "#339933",
+        },
+        {
+          name: "MongoDB",
+          iconifyClass: "simple-icons:mongodb",
+          color: "#47A248",
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "Book-A-Book",
+      url: "https://642cfaf32ababf4822d37fa4--peppy-kitten-8e6c58.netlify.app/",
+      description:
+        "Built a mern stack e-commerce application for books. Performed authentication using JWT, integrated braintree payment getway to process realtime payments.",
       languages: [
         {
           name: "JavaScript",

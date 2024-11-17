@@ -15,6 +15,8 @@ import {
 } from "react-vertical-timeline-component";
 
 function Education(props) {
+  console.log("education props: ", props);
+
   const theme = props.theme;
   const linecolor = theme.name === "light" ? "black" : "white";
   return (
@@ -37,8 +39,8 @@ function Education(props) {
                 className="experience-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                I'm currently a final year B.Tech CSE student at IIIT Naya
-                Raipur.
+                Completed my Bachelors of Technology in Computer Science and
+                Engineering from IIIT Naya Raipur.
               </p>
             </div>
           </div>
