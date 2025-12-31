@@ -5,9 +5,12 @@ import { Fade } from "react-reveal";
 import { style } from "glamor";
 
 export default function ProjectCard({ repo: project, theme }) {
+  const isClickable = project.url && project.url.trim() !== "";
+  console.log("Project URL:", project.url, "isClickable:", isClickable);
+
   function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    const win = window.open(url, "_blank");
+    if (win) win.focus();
   }
 
   const styles = style({
@@ -15,12 +18,12 @@ export default function ProjectCard({ repo: project, theme }) {
     backgroundColor: "rgb(255, 255, 255)",
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
-    cursor: "pointer",
+    cursor: isClickable ? "pointer" : "default",
     borderRadius: "5px",
     height: "100%",
     transition: "all 0.2s ease-in-out",
     ":hover": {
-      boxShadow: `${theme.imageDark} 0 2px 15px`,
+      boxShadow: isClickable ? `${theme.imageDark} 0 2px 15px` : undefined,
     },
   });
 
@@ -30,8 +33,24 @@ export default function ProjectCard({ repo: project, theme }) {
         <div
           {...styles}
           key={project.name}
-          onClick={() => openRepoinNewTab(project.url)}
-          style={{ backgroundColor: theme.projectCard }}
+          onClick={
+            isClickable ? () => openRepoinNewTab(project.url) : undefined
+          }
+          role={isClickable ? "button" : undefined}
+          tabIndex={isClickable ? 0 : -1}
+          onKeyDown={
+            isClickable
+              ? (e) => {
+                  if (e.key === "Enter" || e.key === " ")
+                    openRepoinNewTab(project.url);
+                }
+              : undefined
+          }
+          aria-disabled={!isClickable}
+          style={{
+            backgroundColor: theme.projectCard,
+            cursor: isClickable ? "pointer" : "default",
+          }}
         >
           <div className="repo-name-div">
             <p className="repo-name" style={{ color: theme.text }}>

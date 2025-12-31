@@ -39,7 +39,7 @@ function Education(props) {
                 className="experience-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                Completed my Bachelors of Technology in Computer Science and
+                Completed my Bachelor of Technology in Computer Science and
                 Engineering from IIIT Naya Raipur.
               </p>
             </div>
@@ -52,7 +52,11 @@ function Education(props) {
               className="vertical-timeline-element--work"
               contentStyle={{ background: Obj.color, color: Obj.text }}
               contentArrowStyle={{ borderRight: "7px solid " + Obj.color }}
-              date={Obj.duration}
+              date={
+                <span style={{ color: theme.secondaryText }}>
+                  {Obj.duration}
+                </span>
+              }
               iconStyle={{
                 background: "rgb(33, 150, 243)",
                 color: "#fff",
