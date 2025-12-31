@@ -147,7 +147,8 @@ const skills = {
       title: "Production Infrastructure & Distributed Systems",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience with container orchestration (Kubernetes) and managing distributed containerized systems and service orchestration",
+        "⚡ Deployed microservices using Kubernetes for orchestration and Docker for containerization",
+        "⚡ Built CI/CD pipelines for automated deployment and scaling of containerized applications",
       ],
       softwareSkills: [
         {
