@@ -1,5 +1,7 @@
 .skills-main-div {
   display: flex;
+  align-items: flex-start; /* prevent vertical overlap */
+  gap: 20px;
 }
 
 .skills-header {
@@ -37,6 +39,9 @@
   text-align: center;
   padding-bottom: 10px;
   font-family: "Google Sans Regular";
+  line-height: 1.15; /* prevents tight line stacking */
+  margin-bottom: 12px; /* space below the heading */
+  word-break: break-word;
 }
 
 /* Media Query */

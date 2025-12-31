@@ -14,17 +14,19 @@ const greeting = {
   logo_name: "Tanmay",
   nickname: "Tanmay",
   full_name: "Tanmay Nikam",
-  subTitle: "A Software Engineer and A Learning aficionado.",
+  subTitle:
+    "A Software Engineer interested in building intelligent systems and figuring out how things work under the hood",
+
   resumeLink:
-    "https://drive.google.com/file/d/1J8vXnZ-04swKdYOANP-73vOU30EFHZTD/view?usp=sharing",
-  mail: "mailto:tanmaynikam2002@gmail.com",
+    "https://drive.google.com/file/d/1mtUCd3N3hDKLuLT5RDC61xrPHED6xctN/view?usp=sharing",
+  mail: "mailto:tanmaynikam1604@gmail.com",
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
   github: "https://github.com/TanmayNikam",
   linkedin: "https://www.linkedin.com/in/tanmay-nikam-607993192/",
-  gmail: "tanmaynikam2002@gmail.com",
+  gmail: "tanmaynikam1604@gmail.com",
   gitlab: " ",
   facebook: " ",
   twitter: "",
@@ -34,11 +36,51 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
+      title: "Machine Learning",
+      fileName: "DataScienceImg",
+      skills: [
+        "⚡ Exploring problems at the intersection of information retrieval and multimodal understanding",
+        "⚡ Interested in efficient ML systems from inference optimization to production RAG architectures",
+        "⚡ Learning through building—projects, competitions, and lots of trial and error",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "logos-python",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "Pytorch",
+          fontAwesomeClassname: "logos-pytorch-icon",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        {
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "LangChain",
+          fontAwesomeClassname: "simple-icons:langchain",
+          style: {
+            color: "#XXXXXX",
+          },
+        },
+      ],
+    },
+    {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
+        "⚡ Creating backends using Spring Boot and Node.js",
         "⚡ Built front end using ReactJS and Redux",
-        "⚡ Created application backend in Node, Express & Firebase",
         "⚡ Worked with NOSQL & SQL databases, MySQL, MongoDB and Firestore",
       ],
       softwareSkills: [
@@ -102,59 +144,22 @@ const skills = {
       ],
     },
     {
-      title: "Machine Learning",
-      fileName: "DataScienceImg",
-      skills: [
-        "⚡ Currently interested in learning about machine learning application in healthcare.",
-        "⚡ Stint of experience through projects and competitions.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "logos-python",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sklearn",
-          fontAwesomeClassname: "simple-icons:scikitlearn",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "Pytorch",
-          fontAwesomeClassname: "logos-pytorch-icon",
-          style: {
-            color: "#E94E32",
-          },
-        },
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
+      title: "Production Infrastructure & Distributed Systems",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Experience hosting and managing websites",
+        "⚡ Experience with container orchestration (Kubernetes) and managing distributed containerized systems and service orchestration",
       ],
       softwareSkills: [
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: { color: "#326CE5" },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: { color: "#2496ED" },
+        },
         {
           skillName: "Netlify",
           fontAwesomeClassname: "simple-icons:netlify",
@@ -174,13 +179,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:firebase",
           style: {
             color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
           },
         },
       ],
@@ -248,7 +246,7 @@ const experience = {
   title: "Experience",
   subtitle: " ",
   description:
-    "Currently working as Software Engineer at American Express, previously worked SDE Intern at a stealth startup",
+    "Currently working as Software Engineer at Goldman Sachs, previously worked at American Express and a Stleath Startup",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -256,12 +254,22 @@ const experience = {
       experiences: [
         {
           title: "Software Engineer",
-          company: "American Express",
-          logo_path: "American Express.png",
-          duration: "Aug 2023 - Present",
+          company: "Goldman Sachs",
+          logo_path: "Goldman_Sachs.png",
+          duration: "Sept 2025 - Present",
           location: "Onsite",
           description:
-            "Still Working on the in-house framework to deliver automation solutions and enhance the underlying tool.",
+            "Working on developing robust compliance applications for employees at Goldman Sachs to ensure adherence to regulatory requirements across the organization",
+          color: "#ee3c26",
+        },
+        {
+          title: "Software Engineer",
+          company: "American Express",
+          logo_path: "American Express.png",
+          duration: "Aug 2023 - Sept 2025",
+          location: "Onsite",
+          description:
+            "Engineered scalable automation infrastructure for enabling enterprise-wide workflow automation across global markets",
           color: "#ee3c26",
         },
         {
@@ -271,17 +279,17 @@ const experience = {
           duration: "Jan 2023 - June 202",
           location: "Onsite",
           description:
-            "Worked on an in-house automation framework using JAVA, Spring Boot and Selenium.",
+            "Worked on an in-house automation framework using JAVA, Spring Boot and Selenium",
           color: "#ee3c26",
         },
         {
-          title: "Software Engineer Intern",
+          title: "Founding Engineer",
           company: "Stleath Startup",
           logo_path: "stealth_startup.png",
           duration: "April 2022 - Nov 2022",
           location: "Remote",
           description:
-            "Worked with the founding team to develop the full-stack application single-handedly, using NodeJS and Firebase for the backend and React and Redux to build a responsive frontend.",
+            "Worked as a founding engineer to build and unified HR platform from scratch for simplifying employee onboarding process",
           color: "#ee3c26",
         },
       ],
@@ -293,7 +301,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "I have a hodgepodge of projects, with Web Developement and Machine learning Projects. But currently I much more into machine learning and its real-world applications.",
+    "I focus on building intelligent systems at the intersection of machine learning and systems optimization. I'm particularly interested in building intelligent information retrieval systems with a focus on efficient serving architectures and cross-modal representation learning.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -310,10 +318,84 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "Chatify",
-      url: "https://monumental-squirrel-cda728.netlify.app/",
+      name: "Disaggregated LLM Serving",
+      url: "https://github.com/TanmayNikam/Disaggregated-LLM-Serving",
       description:
-        "A realtime chat application with features like real time chatting, image sharing and group chatting implemented using sockets.",
+        "Optimized LLM inference latency through GPU-level disaggregation, separating compute-bound and memory-bound phases across hardware",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "PyTorch",
+          iconifyClass: "logos-pytorch",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "Visual QA on PDF Documents",
+      url: "https://github.com/TanmayNikam/PDF_RAG/tree/main",
+      description:
+        "Designed cross-modal retrieval system integrating visual encoding, late interaction, and hybrid search for fine-grained QA on visually-rich documents",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "LangChain",
+          iconifyClass: "simple-icons:langchain",
+          style: {
+            color: "#XXXXXX",
+          },
+        },
+      ],
+    },
+    {
+      id: "2",
+      name: "Automated Vulnerability Assessment",
+      description:
+        "Built production RAG pipeline for security analysts for automating vulnerability assessment through iterative retrieval and context aggregation",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "LangChain",
+          iconifyClass: "simple-icons:langchain",
+          style: {
+            color: "#XXXXXX",
+          },
+        },
+      ],
+    },
+    {
+      id: "3",
+      name: "Lumbar Spine Degenerative Classification",
+      url:
+        "https://github.com/TanmayNikam/Lumbar-Spine-Degenrative-Classification",
+      description:
+        "Developed multi-plane MRI analysis system using segmentation then classification architecture for automated stenosis severity prediction",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+        {
+          name: "PyTorch",
+          iconifyClass: "logos-pytorch",
+        },
+      ],
+    },
+    {
+      id: "4",
+      name: "Code Judge",
+      url: "https://github.com/TanmayNikam/ONLINE_JUDGE",
+      description:
+        "Built online judge platform supporting concurrent user submissions through sandboxed execution and distributed job processing",
       languages: [
         {
           name: "JavaScript",
@@ -340,7 +422,38 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "5",
+      name: "Chatify",
+      url: "https://monumental-squirrel-cda728.netlify.app/",
+      description:
+        "A chat application with features like real time chatting, image sharing and group chatting implemented using sockets",
+      languages: [
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Nodejs",
+          iconifyClass: "la-node",
+          color: "#339933",
+        },
+        {
+          name: "MongoDB",
+          iconifyClass: "simple-icons:mongodb",
+          color: "#47A248",
+        },
+        {
+          name: "Redux",
+          iconifyClass: "skill-icons:redux",
+        },
+      ],
+    },
+    {
+      id: "6",
       name: "My Muse",
       url: "https://serene-bunny-54a044.netlify.app/",
       description:
@@ -371,11 +484,10 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "7",
       name: "Music Genre Classification",
-      url: "https://642cfaf32ababf4822d37fa4--peppy-kitten-8e6c58.netlify.app/",
       description:
-        "Built a Music Genre Classifier by training a CNN classifier on MEL-spectograms generated for the music files.",
+        "Built a Music Genre Classifier by training a CRNN classifier on MEL-spectrograms generated for the music files",
       languages: [
         {
           name: "Python",
@@ -388,11 +500,11 @@ const projects = {
       ],
     },
     {
-      id: "2",
-      name: "Medical Chatbot",
+      id: "8",
+      name: "Healthcare Conversational Search",
       url: "https://github.com/TanmayNikam/Chatbot",
       description:
-        "Built a chatbot to answer user queries by recognizing the intention of the user queries either to answer simple queries or to diagnose the users based on chats using various Machine learning algorithms",
+        "Built a healthcare dialogue systems with intent recongition to handle generic medical queries and specialized disease related queries",
       languages: [
         {
           name: "Python",
@@ -410,11 +522,11 @@ const projects = {
       ],
     },
     {
-      id: "3",
+      id: "9",
       name: "Fitness Logger",
       url: "https://github.com/TanmayNikam/exercise_tracker_app",
       description:
-        "Allows user to manually keep logs of their fitness activity and nutrtion intake. Integrated exercieses and nutrition API. Implemented authentication with JWT.",
+        "Allows user to manually keep logs of their fitness activity and nutrtion intake",
       languages: [
         {
           name: "JavaScript",
@@ -437,11 +549,10 @@ const projects = {
       ],
     },
     {
-      id: "4",
+      id: "10",
       name: "Book-A-Book",
       url: "https://642cfaf32ababf4822d37fa4--peppy-kitten-8e6c58.netlify.app/",
-      description:
-        "Built a mern stack e-commerce application for books. Performed authentication using JWT, integrated braintree payment getway to process realtime payments.",
+      description: "Built a mern stack e-commerce application for books",
       languages: [
         {
           name: "JavaScript",
@@ -464,34 +575,7 @@ const projects = {
       ],
     },
     {
-      id: "4",
-      name: "Book-A-Book",
-      url: "https://642cfaf32ababf4822d37fa4--peppy-kitten-8e6c58.netlify.app/",
-      description:
-        "Built a mern stack e-commerce application for books. Performed authentication using JWT, integrated braintree payment getway to process realtime payments.",
-      languages: [
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "ReactJS",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "Nodejs",
-          iconifyClass: "la-node",
-          color: "#339933",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "simple-icons:mongodb",
-          color: "#47A248",
-        },
-      ],
-    },
-    {
-      id: "5",
+      id: "11",
       name: "Email Client",
       url: "https://github.com/TanmayNikam/Email-client",
       description:
